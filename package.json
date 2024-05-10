@@ -1,5 +1,20 @@
 {
+  "name": "pindie-backend",
+  "version": "1.0.0",
+  "description": "may",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Maymay",
+  "license": "ISC",
   "dependencies": {
-    "mongoose": "^8.3.4"
+    "express": "^4.19.2",
+    "mongoose": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
