@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
+const categoryModel = require('./category');
+const usersModel = require('./user');
 
 const gameSchema = new mongoose.Schema({
   title: {
-      // Поле со строковым значением
     type: String,
-    // Явно указываем, что поле обязательно при записи в базу нового документа
     required: true,
   },
   description: {
@@ -22,7 +22,18 @@ const gameSchema = new mongoose.Schema({
   link: {
     type: String,
     required: true
-  }
+  },
+  categories: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: categoryModel,
+    }
+  ],
+  users: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: usersModel,
+  }],
 });
 
-module.exports = mongoose.model('game', gameSchema);
+const games = mongoose.model("games", gameSchema);
+module.exports = games;
