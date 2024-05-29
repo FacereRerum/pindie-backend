@@ -1,4 +1,4 @@
-Мой бэкенд:https://github.com/FacereRerum/pindie-backend/tree/BackMay
+Мой бэкенд:(https://github.com/FacereRerum/backmaymay/tree/main)
 
 maymay.nomoredomainswork.ru
 
